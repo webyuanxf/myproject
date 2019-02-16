@@ -1,0 +1,98 @@
+#case_list {
+    background: url("../image/page5_bg.png") repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+#case_list>.container >ul> li {
+    float: left;
+    width: 300px;
+    height: 167px;
+    position: relative;
+}
+
+#case_list>.container >ul> li > a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s;
+}
+
+#case_list>.container >ul> li span.txt {
+    padding-left: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    color: #fff;
+    font-size: 17px;
+    opacity: 0;
+    transform: translate(5px);
+    transition: all .4s;
+}
+
+#case_list>.container >ul> li span.txt:after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 2px solid #00c0ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all .3s;
+
+}
+
+#case_list>.container >ul> li span.fa {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #00c0ff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    opacity: 0;
+    transition: all .7s;
+}
+
+#case_list>.container >ul> li span.active {
+    background-color: #00c0ff;
+}
+
+#case_list>.container >ul> li:hover > a:before {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#case_list>.container >ul> li:hover span.txt {
+    transform: translate(0);
+    opacity: 1;
+}
+
+#case_list>.container >ul> li:hover span.txt:after {
+    width: 100%;
+}
+
+#case_list>.container >ul> li:hover span.fa {
+    opacity: 1;
+}
+
+#case_list>.container >ul> li img {
+    width: 100%;
+    height: 100%;
+}
+.side-nav-bar>.list>li:nth-child(6)>a:after{
+    margin-left: -30px;
+}
+.side-nav-bar>.list>li:nth-child(6)>a{
+    color:#fff;
+}

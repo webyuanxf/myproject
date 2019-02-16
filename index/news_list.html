@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header2.css">
+    <link rel="stylesheet" href="css/news_list.css"/>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/commonFunction.js"></script>
+</head>
+<body>
+<div id="head">
+    <header class="top_header clear">
+        <div id="logo">
+            <a href="index.html" title="app应用开发|网站建设|网站设计"><img src="image/logo.png" alt="logo"/></a>
+        </div>
+        <div class="top-nav">
+            <nav>
+                <ul>
+                    <li data-tid="0"><a href="news_list.html?tid=1" title="新闻资讯">新闻资讯</a></li>
+                    <li data-tid="1"><a href="news_list.html?tid=2" title="公司新闻">公司新闻</a></li>
+                    <li data-tid="2"><a href="news_list.html?tid=3" title="行业资讯">行业资讯</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div id="news" class="page">
+    <div class="container clear">
+        <div class="newsBox clear">
+           <!-- <div class="news-item">
+                <div class="img-bg"><a href=""><img src="image/title_news.jpg" alt=""></a></div>
+                <div class="info-text">
+                    <h2><a href="#">是时候改变你对微服务的认知了！</a></h2>
+                    <ul>
+                        <li><span class="fa fa-clock-o"></span>2018-02-28</li>
+                        <li><span class="fa fa-user-plus"></span>ortotra</li>
+                        <li><span class="fa fa-eye"></span>552</li>
+                    </ul>
+                    <p>
+                        大部分时候，微服务都是建立在一种基于请求和响应的协议之上。比如,rest等。这种方式是自然的。我们只需要调用另外一个模块就是了,然后等待响应返回,然后继续。这样的方式确实也满足了我们的很多场景:用户通过点击页面的一个按钮然后希望发生一些事情。但是,当我们开始接触许多独立的service的时候,事情就发生改变了。随着service数量急速的增长,同步交互比例也随着service在急速增长。这时候我们的service就会遇到很多瓶颈。于是，不幸的ops
+                    </p>
+                    <div class="tag">
+                        <span>标签:</span>
+                        <a href="javascript:;">微服务</a>
+                        <a href="javascript:;">请求和响应</a>
+                        <a href="javascript:;">事件流</a>
+                        <a href="javascript:;">异步机制</a>
+                    </div>
+                    <button class="more"><a href="#"><span>READ MORE</span><i>&gt;</i><i>&gt;</i><i>&gt;</i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="img-bg"><a href=""><img src="image/title_news.jpg" alt=""></a></div>
+                <div class="info-text">
+                    <h2><a href="#">是时候改变你对微服务的认知了！</a></h2>
+                    <ul>
+                        <li><span class="fa fa-clock-o"></span>2018-02-28</li>
+                        <li><span class="fa fa-user-plus"></span>ortotra</li>
+                        <li><span class="fa fa-eye"></span>552</li>
+                    </ul>
+                    <p>
+                        大部分时候，微服务都是建立在一种基于请求和响应的协议之上。比如,rest等。这种方式是自然的。我们只需要调用另外一个模块就是了,然后等待响应返回,然后继续。这样的方式确实也满足了我们的很多场景:用户通过点击页面的一个按钮然后希望发生一些事情。但是,当我们开始接触许多独立的service的时候,事情就发生改变了。随着service数量急速的增长,同步交互比例也随着service在急速增长。这时候我们的service就会遇到很多瓶颈。于是，不幸的ops
+                    </p>
+                    <div class="tag">
+                        <span>标签:</span>
+                        <a href="javascript:;">微服务</a>
+                        <a href="javascript:;">请求和响应</a>
+                        <a href="javascript:;">事件流</a>
+                        <a href="javascript:;">异步机制</a>
+                    </div>
+                    <button class="more"><a href="#"><span>READ MORE</span><i>&gt;</i><i>&gt;</i><i>&gt;</i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="img-bg"><a href=""><img src="image/title_news.jpg" alt=""></a></div>
+                <div class="info-text">
+                    <h2><a href="#">是时候改变你对微服务的认知了！</a></h2>
+                    <ul>
+                        <li><span class="fa fa-clock-o"></span>2018-02-28</li>
+                        <li><span class="fa fa-user-plus"></span>ortotra</li>
+                        <li><span class="fa fa-eye"></span>552</li>
+                    </ul>
+                    <p>
+                        大部分时候，微服务都是建立在一种基于请求和响应的协议之上。比如,rest等。这种方式是自然的。我们只需要调用另外一个模块就是了,然后等待响应返回,然后继续。这样的方式确实也满足了我们的很多场景:用户通过点击页面的一个按钮然后希望发生一些事情。但是,当我们开始接触许多独立的service的时候,事情就发生改变了。随着service数量急速的增长,同步交互比例也随着service在急速增长。这时候我们的service就会遇到很多瓶颈。于是，不幸的ops
+                    </p>
+                    <div class="tag">
+                        <span>标签:</span>
+                        <a href="javascript:;">微服务</a>
+                        <a href="javascript:;">请求和响应</a>
+                        <a href="javascript:;">事件流</a>
+                        <a href="javascript:;">异步机制</a>
+                    </div>
+                    <button class="more"><a href="#"><span>READ MORE</span><i>&gt;</i><i>&gt;</i><i>&gt;</i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="img-bg"><a href=""><img src="image/title_news.jpg" alt=""></a></div>
+                <div class="info-text">
+                    <h2><a href="#">是时候改变你对微服务的认知了！</a></h2>
+                    <ul>
+                        <li><span class="fa fa-clock-o"></span>2018-02-28</li>
+                        <li><span class="fa fa-user-plus"></span>ortotra</li>
+                        <li><span class="fa fa-eye"></span>552</li>
+                    </ul>
+                    <p>
+                        大部分时候，微服务都是建立在一种基于请求和响应的协议之上。比如,rest等。这种方式是自然的。我们只需要调用另外一个模块就是了,然后等待响应返回,然后继续。这样的方式确实也满足了我们的很多场景:用户通过点击页面的一个按钮然后希望发生一些事情。但是,当我们开始接触许多独立的service的时候,事情就发生改变了。随着service数量急速的增长,同步交互比例也随着service在急速增长。这时候我们的service就会遇到很多瓶颈。于是，不幸的ops
+                    </p>
+                    <div class="tag">
+                        <span>标签:</span>
+                        <a href="javascript:;">微服务</a>
+                        <a href="javascript:;">请求和响应</a>
+                        <a href="javascript:;">事件流</a>
+                        <a href="javascript:;">异步机制</a>
+                    </div>
+                    <button class="more"><a href="#"><span>READ MORE</span><i>&gt;</i><i>&gt;</i><i>&gt;</i></a>
+                    </button>
+                </div>
+            </div>-->
+        </div>
+        <div class="recommend">
+            <p>为您推荐</p>
+            <ul class="news-list">
+                <!--<li>
+                    <a href="#">
+                        <img src="image/news1.jpg" alt="">
+                        <p>web 安全PHP代码审查之常规漏洞</p>
+                        <p>2018-02-28</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/news1.jpg" alt="">
+                        <p>web 安全PHP代码审查之常规漏洞</p>
+                        <p>2018-02-28</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/news1.jpg" alt="">
+                        <p>web 安全PHP代码审查之常规漏洞</p>
+                        <p>2018-02-28</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/news1.jpg" alt="">
+                        <p>web 安全PHP代码审查之常规漏洞</p>
+                        <p>2018-02-28</p>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="pages">
+        <!--<a href="#" class="disabled">上一页</a>-->
+        <!--<a href="#" class="current">1</a>-->
+        <!--<a href="#">2</a>-->
+        <!--<a href="#">下一页</a>-->
+    </div>
+</div>
+
+<div id="foot">
+</div>
+<div id="goTop"></div>
+
+<script src="js/header.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/news_list.js"></script>
+
+</body>
+</html>

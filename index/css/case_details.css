@@ -1,0 +1,110 @@
+#case-details {
+    background: url("../image/page5_bg.png") repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+#case-details>.container>.case-content{
+    width: 800px;
+    float: left;
+}
+#case-details>.container>.case-content>.head {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+#case-details>.container>.case-content>.head>h1{
+    margin-bottom: 5px;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+#case-details>.container>.case-content>.head>ul>li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#case-details>.container>.case-content>.head>ul>li>span.fa{
+    color: #00c0ff;
+    margin-right: 5px;
+}
+#case-details>.container>.case-content>.body{
+    margin-bottom: 60px;
+}
+#case-details>.container>.case-content>.body>img{
+   width: 100%;
+}
+#case-details>.container>.case-content>.foot{
+    padding: 20px 15px;
+    border-top: 1px solid #eee;
+}
+#case-details>.container>.case-content>.foot>a{
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid #555;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#case-details>.container>.case-content>.foot>a:hover{
+    color:#00c0ff;
+    border-color:#00c0ff;
+}
+#case-details>.container>.case-content>.foot>a.prev{
+    float: left;
+}
+#case-details>.container>.case-content>.foot>a.next{
+    float: right;
+}
+
+#case-details > .container > .recommend {
+    margin-left: 840px;
+}
+
+#case-details > .container > .recommend > p {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    font-size: 23px;
+}
+
+#case-details > .container > .recommend > ul > li {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#case-details > .container > .recommend > ul > li > a {
+    display: block;
+}
+#case-details > .container > .recommend > ul > li:hover a{
+    color:#00c0ff;
+}
+#case-details > .container > .recommend > ul > li img {
+    float: left;
+    width: 125px;
+    height: 100px;
+}
+#case-details > .container > .recommend > ul > li>a>p{
+    margin-left: 145px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+#case-details > .container > .recommend > ul > li>a>p:last-child:before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #00c0ff;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.side-nav-bar>.list>li:nth-child(6)>a:after{
+    margin-left: -30px;
+}
+.side-nav-bar>.list>li:nth-child(6)>a{
+    color:#fff;
+}

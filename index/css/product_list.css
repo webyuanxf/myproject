@@ -1,0 +1,146 @@
+#product{
+    background: url("../image/product/produc_bg.png")repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+#product > .container > .product_list{
+    margin-bottom: 20px;
+}
+#product > .container > .product_list>h2{
+    text-align: center;
+    color: #00c0ff;
+    margin-bottom: 30px;
+}
+#product > .container > .product_list>p{
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+    text-indent: 32px;
+}
+
+#product > .container > .product_list > ul > li {
+    display: inline-block;
+    width: 280px;
+    height: 240px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+#product > .container > .product_list > ul > li:last-child{
+    margin: 0;
+}
+#product > .container > .product_list > ul > li img {
+    display: block;
+    width: 100%;
+    transition: all .3s;
+}
+#product > .container > .product_list > ul > li > a > span:first-child {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#product > .container > .product_list > ul > li > a > span:first-child:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .3s;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(2):after,
+#product > .container > .product_list > ul > li > a > span:nth-child(2):before {
+    content: "";
+    display: block;
+    border-top: 2px solid #00c0ff;
+    position: absolute;
+    width: 0;
+    top: -5px;
+    transition: all .3s;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(2):before {
+    right: 50%;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(2):after {
+    left: 50%;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(3) {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 100%;
+    border: 2px solid #00c0ff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    background-color: transparent;
+    transition: all .5s .2s;
+}
+
+#product > .container > .product_list > ul > li > a > span:nth-child(4) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 97%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s;
+    border: 1px solid #444;
+}
+
+/*实现过度效果*/
+#product > .container > .product_list > ul > li > a:hover > span:first-child > img {
+    transform: scale(1.1);
+}
+
+#product > .container > .product_list > ul > li > a:hover > span:first-child:after {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#product > .container > .product_list > ul > li > a:hover > span:nth-child(2) {
+    transform: translate(-50%, -25px);
+    color: #fff;
+}
+
+#product > .container > .product_list > ul > li > a:hover > span:nth-child(2):before,
+#product > .container > .product_list > ul > li > a:hover > span:nth-child(2):after {
+    width: 50%;
+}
+
+#product > .container > .product_list > ul > li > a:hover > span:nth-child(3) {
+    opacity: 1;
+
+}
+
+#product > .container > .product_list > ul > li > a:hover > span:nth-child(4) {
+    opacity: 1;
+    transform: scale(.93);
+}
+.side-nav-bar>.list>li:nth-child(4)>a:after{
+    margin-left: -30px;
+}
+.side-nav-bar>.list>li:nth-child(4)>a{
+    color:#fff;
+}

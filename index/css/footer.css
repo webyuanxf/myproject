@@ -1,0 +1,45 @@
+#foot {
+    padding: 20px 40px;
+    background-color: #222;
+}
+
+#foot > footer .left {
+    float: left;
+}
+
+#foot > footer .right {
+    float: right;
+}
+#foot>footer a,#foot>footer p,#foot .sec span {
+    color:#fff;
+    font-size:14px;
+}
+#foot>footer a{
+    transition:all .3s;
+}
+#foot>footer a:hover{
+    color:#00c0ff;
+}
+#foot .left i{
+    color:#fff;
+    opacity: .3;
+}
+#foot .sec a:before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height:5px;
+    border-radius: 100%;
+    background-color: #00c0ff;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#foot>footer li{
+    display: inline-block;
+}
+#foot .fir{
+    margin-bottom: 10px;
+}
+#foot .fir li>i{
+    margin: 0 5px;
+}

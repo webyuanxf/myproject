@@ -1,0 +1,13 @@
+#head>.top_header{
+    position: static;
+    height: 84px;
+    top:-84px;
+    transition:top .5s;
+}
+#head.fixed>.top_header{
+    position: fixed;
+    top:0;
+}
+#head.fixed+.page{
+    margin-top: 84px;
+}

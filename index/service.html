@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/commonFunction.js"></script>
+    <style>
+        .page {
+            perspective: 2000;
+            -webkit-perspective: 2000;
+            background-color: #00a5e5;
+            position: relative;
+        }
+
+        .cot_box {
+            transform: rotateX(0deg) rotateY(0deg);
+            transition: all .4s;
+        }
+
+        .mask{
+            width: 1000px;
+            height: 500px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom:0px;
+            right:0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="head">
+    <header class="top_header">
+        <div id="logo">
+            <a href="index.html" title="app应用开发|网站建设|网站设计"><img src="image/logo.png" alt="logo"/></a>
+        </div>
+        <div class="top-nav">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#" title="APP开发">APP开发</a></li>
+                    <li><a href="javascript:;" title="网站建设">网站建设</a></li>
+                    <li><a href="javascript:;" title="平面设计">平面设计</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div id="pageBoxs">
+    <div id="page1" class="page">
+
+        <div class="cot_box">
+            <h1>APP开发</h1>
+            <span></span>
+            <h3>APP DEVELOPMENT</h3>
+            <h3 class="sub">相信自己能做到比努力本身更重要</h3>
+            <p>APP软件开发指的是手机应用软件的开发与服务。这里的APP指的是应用程序application的意思。
+                APP技术原本是对软件进行加速运算或进行大型科学运算的技术，基于Paas开发平台开发出的APP，
+                直接部署在云环境上，为企业进行集成，形成一种租用云服务的模式。</p>
+        </div>
+        <div class="mask">
+
+        </div>
+
+    </div>
+    <div id="page2" class="page">
+        <div class="cot_box">
+            <h1>网站建设</h1>
+            <span></span>
+            <h3>WEBSITE CONSTRUCTION</h3>
+            <h3 class="sub">每一份私下的努力都会得到成倍的回报</h3>
+            <p>网站建设是指使用标识语言（markup language)，通过一系列设计、建模、和执行的过程将电子格式的信息通过互联网传输，
+                最终以图形用户界面（GUI）的形式被用户所浏览。简单的信息如文字，图片（GIF，JPEG，PNG）和表格，
+                都可以通过使超文件标示语言、可扩展超文本标记语言等标示语言放置到网站页面上。</p>
+        </div>
+        <div class="mask">
+
+        </div>
+    </div>
+    <div id="page3" class="page">
+        <div class="cot_box">
+            <h1>平面设计</h1>
+            <span></span>
+            <h3>Graphic Artist Designer</h3>
+            <h3 class="sub">赚钱靠大家，幸福你我他。</h3>
+            <p>平面设计（graphic design），也称为视觉传达设计，是以“视觉”作为沟通和表现的方式，
+                透过多种方式来创造和结合符号、图片和文字，借此作出用来传达想法或讯息的视觉表现。
+                平面设计师可能会利用字体排印、视觉艺术、版面（page layout）。</p>
+        </div>
+        <div class="mask">
+
+        </div>
+    </div>
+
+    <div id="foot">
+    </div>
+</div>
+<div id="goTop"></div>
+
+<script src="js/service.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script>
+    var $obj = $("#pageBoxs>.page>.mask");
+    $obj.on("mousemove", throttle(function (e) {
+
+        var centerX = 435;
+        var centerY = 200;
+        var x = (centerY - e.offsetY) / 15;
+        var y = (e.offsetX - centerX) / 25;
+        console.log(x,y);
+        $(this).prev().css({
+            transform: "rotateX(" + x + "deg) rotateY(" + y + "deg)"
+        });
+    }, 100)).on("mouseout",function(){
+        $(this).prev().css({
+            transform: "rotateX(0deg) rotateY(0deg)"
+        });
+    })
+</script>
+</body>
+</html>

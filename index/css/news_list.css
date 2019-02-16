@@ -1,0 +1,190 @@
+#news {
+    background: url("../image/news/news_bg.png") repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+
+#news > .container > .newsBox {
+    width: 800px;
+    float: left;
+}
+
+#news > .container > .newsBox > .news-item {
+    margin-bottom: 30px;
+}
+
+#news > .container > .newsBox > .news-item:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+#news > .container > .newsBox > .news-item > .img-bg {
+    width: 280px;
+    height: 390px;
+    float: left;
+    border: solid #00c0ff;
+    border-width: 0 2px 2px 0;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 15px;
+    transition: all .8s;
+    transform-origin: right bottom;
+}
+
+#news > .container > .newsBox > .news-item > .img-bg:before {
+    content: "";
+    display: block;
+    width: 15px;
+    border-top: 2px solid #00c0ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#news > .container > .newsBox > .news-item > .img-bg:after {
+    content: "";
+    display: block;
+    height: 15px;
+    border-left: 2px solid #00c0ff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#news > .container > .newsBox > .news-item > .img-bg > a > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+
+}
+
+#news > .container > .newsBox > .news-item > .info-text {
+    float: left;
+    width: 460px;
+    margin: 0 20px;
+    padding-top: 15px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > h2 {
+    margin-bottom: 15px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > h2 > a {
+    color: #00c0ff;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > h2:hover > a {
+    color: #222;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > ul > li > span {
+    color: #00c0ff;
+    margin-right: 5px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > p {
+    line-height: 1.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    transition: all .7s;
+    transition-delay: .4s;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > .tag {
+    margin-bottom: 15px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > .tag > a {
+    margin-left: 10px;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > .tag > a:hover {
+    color: #00c0ff;
+}
+
+#news > .container > .newsBox > .news-item > .info-text > .tag > a:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #00c0ff;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+button.more {
+    opacity: 1;
+}
+
+#news > .container > .recommend {
+    margin-left: 840px;
+}
+
+#news > .container > .recommend > p {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    font-size: 23px;
+}
+
+#news > .container > .recommend > ul > li {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#news > .container > .recommend > ul > li > a {
+    display: block;
+}
+#news > .container > .recommend > ul > li:hover a{
+    color:#00c0ff;
+}
+#news > .container > .recommend > ul > li img {
+    float: left;
+    width: 125px;
+    height: 100px;
+}
+#news > .container > .recommend > ul > li>a>p{
+    margin-left: 145px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+#news > .container > .recommend > ul > li>a>p:last-child:before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #00c0ff;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.side-nav-bar>.list>li:nth-child(5)>a:after{
+    margin-left: -30px;
+}
+.side-nav-bar>.list>li:nth-child(5)>a{
+    color:#fff;
+}

@@ -1,0 +1,67 @@
+#search {
+    background: url("../image/banner2.jpg") repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+#search>.container>.head{
+    width: 600px;
+    margin: 30px auto 0;
+    padding: 0 15px;
+    border: 1px solid #00c0ff;
+    background-color: #fff ;
+}
+
+#search>.container>.head>input{
+    outline: none;
+    border: none;
+    width: 465px;
+    line-height: 40px;
+    font-size: 16px;
+
+}
+#search>.container>.head>input::-webkit-input-placeholder{
+    color:#111;
+}
+#search>.container>.head>.fa{
+    color: #00c0ff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+#search>.container>.head>select{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+#search>.container>.body{
+    margin-top: 60px;
+    padding: 0 30px;
+    font-family:Arial;
+}
+#search>.container>.body div{
+    margin-bottom: 10px;
+}
+#search>.container>.body .cls{
+    margin-right: 15px;
+}
+#search>.container>.body a:hover{
+    color:#111;
+}
+#search>.container>.body .title{
+    font-size: 20px;
+    color: #777;
+}
+#search>.container>.body .title .k,
+#search>.container>.body div .k{
+    color:#00c0ff;
+}
+#search>.container>.body .loc{
+    color: #666;
+}
+
+#search>.container>.body li{
+    padding: 15px 25px;
+    background-color: #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 35px;
+}

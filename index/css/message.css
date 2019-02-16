@@ -1,0 +1,127 @@
+#message {
+    background: url("../image/banner2.jpg") repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+}
+#message>.container>.info>h2{
+    font-size: 28px;
+    font-family: Times;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+#message>.container>.info>h1{
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#message>.container>.info>h1>span {
+    color: #00c0ff;
+}
+#message>.container>.info>p{
+    line-height: 1.5;
+    margin: 15px 0;
+}
+#message>.container>.info>p.phone{
+    font-size: 30px;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-family: "microsoft yahei";
+}
+#message>.container>.form{
+    margin-top: 40px;
+}
+#message>.container>.form p{
+    font-size: 18px;
+    padding: 20px 0 5px 0;
+}
+#message>.container>.form input{
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 350px;
+    padding: 0 15px;
+    line-height: 45px;
+    height: 45px;
+    margin-right: 13px;
+    color:#111;
+    font-size: 16px;
+    margin-top: 20px;
+
+
+}
+#message>.container>.form input::-webkit-input-placeholder,
+#message>.container>.form textarea::-webkit-input-placeholder{
+    color:#111;
+}
+#message>.container>.form textarea{
+    width: 100%;
+    padding: 8px 14px;
+    line-height: 28px;
+    height: 110px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #111;
+    font-size: 16px;
+    margin-top: 20px;
+    outline: none;
+}
+#message>.container>.form input[type="button"]{
+    width: 140px;
+    cursor: pointer;
+    background-color: #00c0ff;
+    color: #fff;
+}
+#message>.container>.form input[type="button"]:hover{
+    background:linear-gradient(to bottom, #00c0ff, #00a5e5);;
+    color: #fff;
+}
+#message>.container>.form input[type="button"]:active{
+    background:linear-gradient(to bottom, #00c0ff, #009ad9);;
+    color: #fff;
+}
+#message>.container>.messages>p{
+    font-size: 20px;
+    padding: 20px 0 15px 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+#message>.container>.messages>.msgBox>.msg{
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#message>.container>.messages>.msgBox>.msg>.head>.fa{
+    color: #00c0ff;
+    margin-right: 10px;
+    font-size: 18px;
+}
+#message>.container>.messages>.msgBox>.msg>.head>p{
+    margin: 10px 0;
+}
+#message>.container>.messages>.msgBox>.msg>.body{
+    padding-left: 30px;
+}
+#message>.container>.messages>.msgBox>.msg  small{
+    font-family: "microsoft yahei";
+}
+#message>.container>.messages>.msgBox>.msg>.body li{
+    margin: 5px 0;
+}
+#message>.container>.messages>.msgBox>.msg>.body .u{
+    color: #00c0ff;
+    font-size: 17px;
+}
+.side-nav-bar>.list>li:nth-child(7)>a:after{
+    margin-left: -30px;
+}
+.side-nav-bar>.list>li:nth-child(7)>a{
+    color:#fff;
+}
